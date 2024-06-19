@@ -1,0 +1,42 @@
+.tr, .td {
+	padding: 5px;
+	text-align: left;
+	border-top: 1px solid #ddd;
+	cursor: pointer;
+}
+
+.tr:hover {
+	background-color: var(--glacier-light);
+}
+
+.selected-row, .selected-row:hover {
+	background-color: var(--glacier);
+}
+
+.hovered-row {
+	background-color: var(--glacier-light);
+}
+
+.status-column {
+	position: relative; /* needs explicit relative positioning for absolute children */
+	text-transform: capitalize;
+}
+
+.status-indicator {
+	position: absolute;
+	left: -15px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+}
+
+.status-available {
+	background-color: lightgreen;
+}
+
+/* removed as it is not shown in the mockup */
+/* .status-scheduled {
+	background-color: lightsalmon;
+} */

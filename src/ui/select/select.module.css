@@ -1,0 +1,228 @@
+.selectWrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	font-family: var(--font-inter);
+	color: #000000;
+}
+
+.selectWrapper:focus-within .primary-container {
+	border-color: var(--emerald-dark);
+}
+
+.selectWrapper:focus-within .secondary-container {
+	border-color: #000000;
+}
+
+.selectWrapper:focus-within .tertiary-container {
+	border-color: var(--glacier);
+}
+
+.small-wrapper {
+	gap: 4px;
+	font-size: 16px;
+	font-weight: 350;
+}
+
+.medium-wrapper {
+	gap: 6px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.big-wrapper {
+	gap: 8px;
+	font-size: 20px;
+	font-weight: 450;
+}
+
+.selectContainer {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	outline: none;
+	user-select: none;
+	border: 2px solid transparent;
+	box-sizing: border-box;
+	text-transform: capitalize;
+	-webkit-transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-ms-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
+
+.selectContainer:hover {
+	border-color: var(--glacier);
+}
+
+.small-container {
+	height: 42px;
+	line-height: 42px;
+	gap: calc(15px / 2);
+	padding: 0 calc(15px / 2);
+	border-radius: 4px;
+}
+
+.medium-container {
+	height: 54px;
+	line-height: 54px;
+	gap: 0 calc(20px / 2);
+	padding: 0 calc(20px / 2);
+	border-radius: 6px;
+}
+
+.big-container {
+	height: 66px;
+	line-height: 66px;
+	gap: calc(25px / 2);
+	padding: 0 calc(25px / 2);
+	border-radius: 8px;
+}
+
+.selectDropdown {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	outline: none;
+	user-select: none;
+	box-sizing: border-box;
+	text-transform: capitalize;
+	-moz-box-shadow: 0 8px 12px -3px #ddd;
+	-webkit-box-shadow: 0 8px 12px -3px #ddd;
+	box-shadow: 0 8px 12px -3px #ddd;
+	border: 1px solid var(--glacier);
+	background-color: #FFFFFF;
+}
+
+.primary-dropdown > div > *:last-child {
+	background-color: var(--emerald-dark);
+	border-radius: 50%;
+}
+
+.secondary-dropdown > div > *:last-child {
+	background-color: #000000;
+	border-radius: 50%;
+}
+
+.tertiary-dropdown > div > *:last-child {
+	background-color: var(--glacier);
+	border-radius: 50%;
+}
+
+.small-dropdown {
+	border-radius: 4px;
+	padding: calc(15px / 2);
+	gap: 4px;
+}
+
+.medium-dropdown {
+	border-radius: 6px;
+	padding: calc(20px / 2);
+	gap: 6px;
+}
+
+.big-dropdown {
+	border-radius: 8px;
+	padding: calc(25px / 2);
+	gap: 8px;
+}
+
+.small-dropdown > div {
+	height: 26px;
+	line-height: 26px;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 4px;
+	color: var(--text-primary);
+	gap: 4px;
+}
+
+.small-dropdown > div:hover {
+	background-color: var(--glacier-light);
+	color: #000000;
+}
+
+.small-dropdown > div > *:last-child {
+	width: 18px;
+	height: 18px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.medium-dropdown > div {
+	height: 32px;
+	line-height: 32px;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 6px;
+	color: var(--text-primary);
+	gap: 6px;
+}
+
+.medium-dropdown > div:hover {
+	background-color: var(--glacier-light);
+	color: #000000;
+}
+
+.medium-dropdown > div > *:last-child {
+	width: 20px;
+	height: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.big-dropdown > div {
+	height: 38px;
+	line-height: 38px;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 8px;
+	color: var(--text-primary);
+	gap: 8px;
+}
+
+.big-dropdown > div:hover {
+	background-color: var(--glacier-light);
+	color: #000000;
+}
+
+.big-dropdown > div > *:last-child {
+	width: 22px;
+	height: 22px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.small-dropdown > div, .medium-dropdown > div, .big-dropdown > div {
+	-webkit-transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-ms-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.disabledSelect {
+	background-color: var(--glacier-light);
+	color: var(--cinder-dark);
+	cursor: not-allowed;
+}
+
+.disabledSelect:hover .selectContainer {
+	border-color: transparent;
+}

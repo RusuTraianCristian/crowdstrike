@@ -1,0 +1,29 @@
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #ddd;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+.tr, .th {
+	padding: 5px;
+	text-align: left;
+	border-top: 1px solid #ddd;
+	text-transform: capitalize;
+}
+
+.tr:first-child {
+	height: 60px;
+}
+
+.td-loading {
+	text-align: center;
+	padding: 10px;
+}
+
+@media (max-width: 720px) {
+	.table {
+		display: block;
+	}
+}

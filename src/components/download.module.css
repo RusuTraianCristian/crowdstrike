@@ -1,0 +1,30 @@
+.downloadContentWrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: #FFFFFF;
+}
+
+.downloadContentSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: calc(100% - 30px);
+	max-width: 1400px;
+	user-select: none;
+	padding: 75px 15px;
+	gap: 45px;
+	overflow-x: auto;
+}
+
+.downloadContentSection:last-child {
+	max-width: 600px;
+	align-items: flex-start;
+	gap: 5px;
+}
+
+.downloadContentSection > h3 {
+	font-weight: 450;
+}

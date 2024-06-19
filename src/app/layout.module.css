@@ -1,0 +1,57 @@
+.dock-content-wrapper {
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.dock-content-section {
+	height: 70px;
+	line-height: 70px;
+	display: flex;
+	flex: 0 1 1;
+	gap: 15px;
+}
+
+.dock-content-section:first-child {
+	gap: 0;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+	transition: all ease-in-out .15s;
+}
+
+.dock-content-section:first-child:active {
+	scale: 0.95;
+}
+
+.dock-content-section > div {
+	font-size: 1.35rem;
+	line-height: 1.35rem;
+	font-weight: 900;
+	color: var(--blaze-dark);
+}
+
+.dock-content-section > div:last-child {
+	font-weight: 300;
+	color: #000;
+}
+
+.dock-content-section-select-wrapper {
+	margin: 14px 0;
+}
+
+.main-content-wrapper {
+	margin-top: 70px;
+}
+
+@media only screen and (max-width: 720px) {
+	.dock-content-section:first-child {
+		align-items: flex-start;
+		justify-content: center;
+		gap: 2px;
+		flex-direction: column;
+	}
+}

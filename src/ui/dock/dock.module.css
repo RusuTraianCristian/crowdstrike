@@ -1,0 +1,30 @@
+.dock {
+	width: calc(100% - 30px);
+	height: 70px;
+	line-height: 70px;
+	background-color: rgba(255, 255, 255, 0.75);
+	backdrop-filter: blur(10px);
+	-moz-box-shadow: 0 0 12px 3px #ddd;
+	-webkit-box-shadow: 0 0 12px 3px #ddd;
+	box-shadow: 0 0 12px 3px #ddd;
+	padding: 0 15px;
+	position: fixed;
+	z-index: 999999999;
+	top: 0;
+	left: 0;
+	transition: .45s;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	align-content: center;
+	justify-content: center;
+}
+
+.dockContainer {
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+}
